@@ -714,6 +714,7 @@ width: 40%;
     border: none;
     border-radius: 10px;
     color: #fff;
+    cursor: pointer;
   }
   .graphic--container{
     display: flex;
