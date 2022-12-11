@@ -1,10 +1,24 @@
+<?php
+  $name = $_POST['name'];
+  $visitor_email = $_POST['email'];
+  $message = $_POST['message'];
+?>
+<?php
+	$email_from = 'alexisn85h@yahoo.com';
+
+	$email_subject = "New Form submission";
+
+	$email_body = "You have received a new message from the user $name.\n".
+                            "Here is the message:\n $message".
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lexy Nicole Photographyx</title>
+    <title>Lexy Nicole Photography</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -45,20 +59,27 @@
                 <h1>Contact Me</h1>
                 <h2>Let's Schedule a Shoot!</h2>
             </div>
-            <div class="form--container">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="firstname" required>
-                <input type="text" id="name" name="lastname" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
+            <form class="form--container" action="https://formsubmit.co/alexisn85h@yahoo.com" method="post" enctype=”text/plain”>
+                <div class="inputs">
+                <label for="firstname">First Name</label>
+                <input type="text" id="name" name="firstname" style= "font-size:14pt;height:25px;width:200px" required>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="name" name="lastname" style= "font-size:14pt;height:25px;width:200px" required>
+                </div>
+                <div class="inputs">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" style= "font-size:14pt;height:25px;width:200px" required>
+                </div>
+                <div class="inputs">
                 <label for="phone">Phone Number</label>
-                <input type="number" id="phone" name="phonenumber" required>
-
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            </div>
+                <input type="tel" id="phone" name="phonenumber" style= "font-size:14pt;height:25px;width:200px" required>
+                </div>
+                <div class="inputs">
+                <textarea type="text" name="message" id="message" cols="30" rows="10" placeholder="Leave me a message!"></textarea>
+                </div>
+                <button class="inputs" type="submit" id="submitForm">Send</button>
+            </form>
+            
         </div>
     </div>
 
