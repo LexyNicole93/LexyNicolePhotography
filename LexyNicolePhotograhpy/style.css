@@ -715,3 +715,51 @@ width: 40%;
     border-radius: 10px;
     color: #fff;
   }
+  .graphic--container{
+    display: flex;
+    position: absolute;
+    margin-left: 60%;
+
+  }
+
+  .graphic--container img{
+    width: 500px;
+  }
+
+  .photogrid{
+    justify-content: center;
+  }
+
+  .column-grid img{
+    width: 500px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+  }
+
+  .column-grid img:hover{
+    box-shadow: 1px 3px 8px 3px gray;
+    width: 550px;
+  }
+
+ .row-grid{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 30px;
+ }
+
+ .column-grid{
+    position: relative;
+ }
+
+ .overtext{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+ }
+
+ .overtext:hover{
+    display: block;
+ }
+
