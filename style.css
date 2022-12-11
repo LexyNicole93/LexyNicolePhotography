@@ -706,7 +706,7 @@ width: 40vh;
       }
 
       .section--container2 img{
-        width: 400px;
+        width: 450px;
         margin: 20px;
         padding: 20px;
       }
@@ -718,6 +718,10 @@ width: 40vh;
       .section--container h2{
         font-size: 1.5rem;
       }
+
+      .footer__img img{
+        width: 200px;
+    }
     
     
     }
@@ -743,6 +747,10 @@ width: 40vh;
           .photography--section{
             display: block;
           }
+
+          .footer__img img{
+            width: 100px;
+        }
 
         
 
