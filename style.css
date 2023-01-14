@@ -135,14 +135,14 @@ width: 40vh;
 
 
 .main__content h1 {
-    font-family: Main;
-    font-size: 4rem;
+    font-family: Second;
+    font-size: 5rem;
     color: #2A9D8F;
 }
 
 .main__content h2 {
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-family: Second;
     color: #E9C46A; 
 }
